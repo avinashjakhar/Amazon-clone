@@ -1,6 +1,6 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -20,7 +20,7 @@ body{
 }
 .navbar_netflix{
     height: 100%;
-    width: 14px;
+    width: 125px;
 }
 .navbar_nav_items{
     display: flex;
@@ -28,8 +28,8 @@ body{
     
 }
 .netflix_logo{
-    height: 40px;
-    width: 140px;
+    height: 100%;
+    width: 100%;
 }
 .language_drop_down{
     background: transparent;
@@ -43,7 +43,7 @@ body{
     background: rgba(0, 0, 0, 0.4);
 }
 .signin_button{
-    border: 0.0625rem solid #dc030f;
+    border:#dc030f;
     background-color: #dc030f;
     color: white;
     padding: 0.25rem 0.5rem;
@@ -70,20 +70,135 @@ body{
 .hero_card{
     position: absolute;
     top: 30%;
-    left: 32%;
-
+    left: 33%;
     text-align: center;
     display: flex;
-    /* justify-content: center; */
-    
     flex-direction: column;
     gap: 10px;
 }
+
 .hero_title{
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 5rem;
 }
-.hero_subtitle,hero_desc{
+.hero_subtitle,.hero_desc{
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+}
+.input-container {
+    display: flex; /* Flexbox to align items in a row */
+    align-items: center; /* Vertically center the input and button */
+    justify-content: center;
+  }
+  
+  .email {
+    width: 450px;
+    height: 60px;
+    color: black;
+    padding: 0.25rem 0.5rem;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid white;
+    border-right: none; /* Remove the border on the right to blend with the button */
+    outline: none; /* Optional: Remove the default outline */
+  }
+  
+  .get_started {
+    font-size: large;
+    width: 170px;
+    height: 60px;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  /* Features */
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+
+}
+.card-1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+.desc-1{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom:20px ;
+}
+
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label:: ::after{
+    transform: rotate(135deg);
 }
