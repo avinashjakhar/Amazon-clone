@@ -50,6 +50,7 @@ body{
     border-radius: 4px;
     height: 35px;
     width: 100px;
+    cursor: pointer;
 }
 .hero_bg_img_cont{
     width: 100%;
@@ -70,7 +71,7 @@ body{
 .hero_card{
     position: absolute;
     top: 30%;
-    left: 33%;
+    left: 25%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -96,8 +97,7 @@ body{
     height: 60px;
     color: black;
     padding: 0.25rem 0.5rem;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 4px;
     border: 1px solid white;
     border-right: none; /* Remove the border on the right to blend with the button */
     outline: none; /* Optional: Remove the default outline */
@@ -109,10 +109,10 @@ body{
     height: 60px;
     background-color: #dc030f;
     border: 1px solid #dc030f;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-radius: 4px;
     color: white;
     cursor: pointer;
+    margin: 8px;
   }
   /* Features */
 .features{
